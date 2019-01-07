@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# output images
+*.ppm
+
 # Compiled Object files
 *.slo
 *.lo
