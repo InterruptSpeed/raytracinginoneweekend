@@ -4,6 +4,8 @@
 #include "ray.h"
 #include "chapter6_camera.h"
 
+#ifndef MAXFLOAT
+
 // book had #include "float.h" instead of the following line
 #define MAXFLOAT FLT_MAX 
 
@@ -11,6 +13,8 @@
 float drand48() {
     return (double(rand()) / RAND_MAX);
 }
+
+#endif
 
 vec3 color(const ray& r, hitable *world) {
     hit_record rec;

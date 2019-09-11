@@ -3,11 +3,15 @@
 #include "hitable_list.h"
 #include "ray.h"
 #include "chapter10_camera.h"
-#include "rand.h"
 #include "material.h"
 
+#ifndef MAXFLOAT
+
+#include "rand.h"
 // book had #include "float.h" instead of the following line
 #define MAXFLOAT FLT_MAX 
+
+#endif
 
 vec3 color(const ray& r, hitable *world, int depth) {
     hit_record rec;

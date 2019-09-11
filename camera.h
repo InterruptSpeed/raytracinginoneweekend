@@ -13,7 +13,12 @@
 #define CAMERAH
 #include "ray.h"
 
+#ifndef MAXFLOAT
+
 #include "rand.h"
+
+#endif
+
 // added to support M_PI
 #define _USE_MATH_DEFINES
 #include <math.h>
