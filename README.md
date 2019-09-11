@@ -8,3 +8,9 @@ repo contains my follow-along of Peter Shirley's book
 cl chapterN.cpp /EHsc
 chapterN.exe > N.ppm
 ```
+
+```
+g++ chapterN.cpp -o chapterN
+./chapterN -o N.ppm
+feh N.ppm
+```

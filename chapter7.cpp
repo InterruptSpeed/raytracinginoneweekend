@@ -3,11 +3,16 @@
 #include "hitable_list.h"
 #include "ray.h"
 #include "chapter6_camera.h"
+
+#ifndef MAXFLOAT
+
 #include <random>
 #include "rand.h"
 
 // book had #include "float.h" instead of the following line
 #define MAXFLOAT FLT_MAX 
+
+#endif
 
 vec3 random_in_unit_sphere() {
     vec3 p;
